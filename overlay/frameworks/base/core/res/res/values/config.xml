@@ -156,6 +156,9 @@
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
+    <!-- Button backlight -->
+    <integer name="config_buttonBrightnessSettingDefault">0</integer>
+
     <!-- Configuration to restart radio upon PDP_DEACTIVATE with
          error cause as Regular deactivation(36). -->
     <!--
