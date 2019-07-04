@@ -240,6 +240,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     KeyHandlerSmartisan
 
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/keylayout,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
+
 # IPv6
 PRODUCT_PACKAGES += \
     ebtables \
