@@ -1044,12 +1044,5 @@ vendor/firmware/libpn548ad_fw.so
 # Sensors
 etc/sensors/hals.conf:vendor/etc/sensors/hals.conf
 
-# Thermal
-etc/thermal-engine.conf:vendor/etc/thermal-engine.conf
-vendor/bin/thermal-engine
-vendor/lib/libthermalclient.so
-vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
-
 # Wi-Fi
 etc/firmware/wlan/qca_cld/WCNSS_cfg.dat:vendor/firmware/wlan/qca_cld/WCNSS_cfg.dat

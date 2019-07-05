@@ -81,6 +81,3 @@ sed -i 's|/data/misc/camera|/data/vendor/qcam|g' $BLOB_ROOT/vendor/lib/libmmcame
 # Fingerprint
 sed -i 's|\x00fpc_fingerprint\x00|\x00fingerprint\x00\x00\x00\x00\x00|' $BLOB_ROOT/vendor/lib64/hw/fingerprint.fpc.so
 sed -i 's|\x00gxfingerprint\x00|\x00fingerprint\x00\x00\x00|' $BLOB_ROOT/vendor/lib64/hw/fingerprint.goodix.so
-
-# Thermal
-sed -i 's|/system/etc/|/vendor/etc/|g' $BLOB_ROOT/vendor/bin/thermal-engine
