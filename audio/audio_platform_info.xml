@@ -38,9 +38,10 @@
         <!-- In the below value string, first parameter indicates size -->
         <!-- followed by perf lock options                             -->
         <param key="perf_lock_opts" value="4, 0x101, 0x704, 0x20F, 0x1E01"/>
-        <param key="native_audio_mode" value="src"/>
-        <param key="input_mic_max_count" value="4"/>
     </config_params>
+    <native_configs>
+        <feature name="NATIVE_AUDIO_44.1" codec_support="1"/>
+    </native_configs>
     <backend_names>
         <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX"/>
         <device name="SND_DEVICE_OUT_LINE" backend="headphones" interface="SLIMBUS_6_RX"/>
@@ -51,9 +52,5 @@
         <device name="SND_DEVICE_OUT_VOICE_TTY_FULL_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX"/>
     </backend_names>
-     <pcm_ids>
-       <usecase name="USECASE_AUDIO_RECORD_LOW_LATENCY" type="in" id="19" />
-       <usecase name="USECASE_AUDIO_PLAYBACK_ULL" type="out" id="19" />
-     </pcm_ids>
 </audio_platform_info>
 
